@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+
+     <!-- Bootstrap CSS and Icons -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Custom CSS -->
+             
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    #main{
+       overflow: hidden;
+    }
+    
+    #header{
+        height: 15%;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        color:  rgb(25, 25, 114);
+        font-size: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .checkbtn{
+        font-size: 30px;
+        margin: 10px;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    #nav{
+        display: flex;
+        margin-top: 17px;
+        
+    }
+    .tests{
+        margin-left: 20px;
+        color: solid rgb(6, 33, 112);
+        display: flex;
+        font-family: 'Gills Sans';
+    }
+    .tests :hover{
+        color: rgba(51, 51, 219, 0.767);
+    }
+    #logo{
+        height: 50%;
+        margin-left: 30px;
+    }
+    #logo img{ 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    #fakeheader{
+        height: 90px;
+        width: 100%;
+        background-color: rgb(188, 224, 140);
+    } 
+    #contact{
+        margin-left: 60px;
+        color:rgb(121, 102, 102);
+        display: flex;
+    }
+        
+    #contact p{
+        margin-left: 20px;
+    }
+    #contact:hover{
+        color:  rgba(51, 51, 219, 0.767);
+    }
+    .icon{
+        margin-left: 40px;
+        color: black;
+        border-radius: 50%;
+    }
+    .icon:hover{
+        color: blue;
+    }
+    #try{
+        margin-left: 50px;
+        background-color: rgb(6, 156, 6);
+        color: white;
+        padding: 10px 20px;
+    }
+    #try:hover{
+        color: black;
+    }
+    #page1{
+        height: 85%;
+        width: 100%;
+        background-color: white;
+        
+    
+    }
+    #strip{
+        height: 10%;
+        width: 100%;
+        background-color: rgb(16, 16, 77);
+        color: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    #strip u{
+        margin: 20px;
+    } 
+    #content{
+        width: 100%;
+        height: 73%;
+        display: flex;
+        margin: 20px;
+        margin-right: 10px;
+    }
+    #box1{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    }
+    #box1 h1{
+        margin: 5px;
+        padding: 25px;
+        font-size:50px;
+        font-weight: 600;
+        color: rgb(12, 34, 75);
+    }
+    #box1 p{
+    font-weight: 400;
+    font-size: x-large;
+    margin: 20px;
+    }
+    
+    
+    #btns{
+        display: flex;
+        margin-left: 10px;
+        padding: 20px;
+    }
+    #btn1{
+        width: 33%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        padding: 10px 20px;
+        background-color: rgb(19, 131, 168);
+        border-radius: 5px;
+        margin-right: 20px;
+       
+    }
+    #btn1:hover{
+        background-color: rgb(5, 5, 63);
+        text-decoration-line: none;
+    }
+    #btn2{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        padding: 10px 20px;
+        color: rgb(74, 156, 184);
+        border: 2px solid rgb(85, 85, 223);
+        border-radius: 5px;
+        margin: px;
+    }
+    #btn2:hover{
+        background-color: gray;
+        color: rgb(36, 34, 34);
+        border-color: rgb(31, 29, 29);
+    }
+    #box2{
+        width: 50%;
+        height: 100%;
+    }
+    #box2 img{
+        width: 100%;
+        height: 130%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    #heading{
+        width: 100%;
+        height: 16%;
+       margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: rgb(12, 34, 75);
+        
+    }
+    #heading h2{
+       
+        margin-left: -20px;
+    }
+    #page2{
+        height: 130%;
+        width: 100%;
+        background-color: white;    
+    }
+    #dibba{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding: 60px;
+        margin-left: 20px;
+    }
+    #dibba1{
+        width: 22%;
+        height: 80%;
+        border: 2px solid  rgb(221, 198, 198);
+        border-radius: 30px;
+        margin-right: 50px;
+        
+    }
+    #dibba1 img{
+        width: 100%;
+        height: 40%;
+        border-radius: 30px;
+    }
+     #dibba h3{
+        padding: 20px;
+        color: rgb(33, 33, 114);
+        
+     }
+     #dibba p{
+        
+        margin-left: 13px;
+        
+     }
+    #dibba h4{
+        padding: 20px;
+        color: rgb(5, 5, 63);
+    }
+    #dibba h4:hover{
+        color: rgb(20, 20, 134);
+    }
+    #dibba2{
+        width: 22%;
+        height: 70%;
+        border: 2px solid rgb(221, 198, 198);
+        border-radius: 30px;
+        margin-right: 50px;
+    }
+    #dibba2 img{
+        width: 100%;
+        height: 40%;
+        border-radius: 30px;
+    }
+    
+    #dibba3{
+        width: 22%;
+        height: 70%;
+        border: 2px solid  rgb(221, 198, 198);
+        border-radius: 30px;
+        margin-right: 50px;
+    }
+    #dibba3 img{
+        width: 100%;
+        height: 40%;
+        border-radius: 30px;
+    }
+    #dibba4{
+        width: 22%;
+        height: 70%;
+        border: 2px solid  rgb(221, 198, 198);
+       
+        border-radius: 30px;
+    }
+    #dibba4 img{
+        width: 100%;
+        height: 40%;
+        border-radius: 30px;
+    }
+    #product{
+        width: 100%;
+        height: 100%;
+        margin-top: -200px;
+    }
+    #product img{
+        width: 100%;
+        height: 50%;
+    }
+    #btn3{
+        width: 15%;
+        height: 7%;
+        padding: 10px 20px;
+        color: rgb(19, 131, 168);
+        background-color: white;
+        border: 2px solid rgb(19, 131, 168);
+        margin-left: 45%;
+       margin-top: -15%;
+        
+    }
+    #btn3:hover{
+        color: darkblue;
+        border-color: darkblue;
+    } 
+    #box4{
+        width: 60%;
+        height: 100%;
+        margin-left: 25%;
+        margin-top: 200px;         
+    } 
+    #box4 h1{
+        margin: 30px;
+        font-size: 250%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(5, 5, 63);
+    
+    }
+    #box4 p{
+        margin: 30px;
+        font-size: 110%;
+        font-family: 'Gill Sans';
+        margin-right: 170px;
+    }
+    #btnes{
+        display: flex;
+       
+    }
+    #btn4{
+        width: 20%;
+        height: 40px;
+        border: 2px solid rgb(19, 131, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+        background-color: rgb(19, 131, 168);
+        color: white;
+        
+    }
+    #btn4:hover{
+        background-color: rgb(5, 5, 224) ;
+    }
+    #btn5{
+        width: 20%;
+        height: 40px;
+        border: 2px solid rgb(19, 131, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+    #learn h2{
+        margin: 40px;
+        font-size: 30px;
+        margin-top: 90px;
+        color: rgb(5, 5, 63);
+    }
+    #page3{
+        width: 100%;
+        height: 150%;
+    }
+    #third{
+        display: flex;
+        margin-top: 50px;
+    }
+    #third h1{
+        margin: 20px;
+        font-size: 25px;
+        color:  rgb(5, 5, 63);
+    }
+    #third p{
+        margin: 20px;
+    }
+    #third h2{
+        margin: 20px;
+        font-size: 18px;
+        color:  rgb(5, 5, 63);
+    }
+    #box5{
+     width: 25%;
+     height: 450px;
+     border: 5px solid rgb(245, 240, 240);
+     margin-left: 60px;
+     border-radius: 20px;
+    }
+    #box5 img{
+       margin-left:90px;
+       margin-top: 30px;
+        width: 150px;
+    }
+    #box6{
+        width: 25%;
+        height: 450px;
+        border: 5px solid rgb(240, 236, 236);
+        margin-left: 70px;
+        border-radius: 20px;
+       }
+       #box6 img{
+        margin-left:90px;
+        margin-top: 30px;
+         width: 150px;
+       }
+       #box7{
+        width: 25%;
+        height: 450px;
+        border: 5px solid rgb(236, 230, 230);
+        margin-left: 70px;
+        border-radius: 20px;
+       }
+       #box7 img{
+        margin-left:90px;
+        margin-top: 30px;
+         width: 150px;
+       }
+       #btn6{
+        margin: 20px;
+        background-color:  rgb(191, 211, 211);;
+        width: 20%;
+        height: 8%;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #btn6:hover{
+        background-color: rgb(79, 79, 156);
+        color:white
+       }
+       #btn7{
+        margin: 20px;
+        background-color: rgb(202, 214, 214);
+        width: 20%;
+        height: 8%;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       #btn7:hover{
+        background-color: rgb(79, 79, 156);
+        color:white
+       }
+       #btn8{
+        margin: 20px;
+        background-color: rgb(196, 214, 214);
+        width: 20%;
+        height: 8%;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #btn8:hover{
+        background-color: rgb(79, 79, 156);
+        color:white
+       }
+       #btn9{
+        width: 150px;
+        height: 40px;
+        border: 2px solid rgb(19, 131, 168); 
+        color: rgb(19, 131, 168); 
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        margin-left: 40%;
+        margin-top: 20px;
+       }
+       #btn9:hover{
+        border-color: rgb(99, 84, 84);
+        color:  rgb(99, 84, 84);
+       }
+       #page4{
+        width: 100%;
+        height: 100%;
+       }
+       #page4 h1{
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        margin: 50px;
+        margin-left: 18%;
+        color:  rgb(5, 5, 63);
+        
+       }
+       #btn10{
+        width: 15%;
+        height: 50px;
+        border: 2px solid  rgb(19, 131, 168);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 40%;
+        color:  rgb(19, 131, 168);
+        border-radius: 10px;
+       }
+       #boxes1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* margin: 15px; */
+       }
+       #boxs1{
+        width: 13%;
+        height: 90px;
+        background-color:whitesmoke;
+        margin: 15px;
+       }
+       #boxs1 img{
+        
+        height: 60%;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+       }
+       #boxs2{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs2 img{
+       margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       #boxs3{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs3 img{
+        margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       #boxs4{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs4 img{
+        margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       #boxs5{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs5 img{
+        margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #boxes2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #boxs6{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs6 img{
+        margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       #boxs7{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs7 img{
+        margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       #boxs8{
+        width: 13%;
+        height: 90px;
+        background-color: whitesmoke;
+        margin: 15px;
+       }
+       #boxs8 img{
+       margin: 12px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #backphoto{
+        margin-top: -90px;
+       }
+       #backphoto img{
+        border-radius: 56%;
+        width: 100%;
+        height: 120%;
+       }
+       #page5{
+        width: 100%;
+        height: 100%;
+       }
+    
+       
+       #box8{
+        margin: 50px;
+        width: 100%;
+        height: 70%;
+        border: 2px solid rgb(184, 181, 181);
+        display: flex;
+        border-radius: 30px;
+        
+       }
+       #part2 img{
+        object-fit: contain;
+        width: 550px;
+        margin-left: 60px;
+        margin-top: -30px;
+    
+       }
+       #part1{
+        width: 50%;
+        height: 100%;
+       
+        
+       }
+    
+       #box8 h1{
+        margin: 80px;
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(5, 5, 63);
+    }
+       #dibbe{
+        display: flex;
+       }
+       #btn11{
+        
+        margin-left: 70px;
+        background-color:  rgb(19, 131, 168);
+        width: 200px;
+        height: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        border-radius: 10px;
+       }
+       #btn12{
+        margin-left: 30px;
+        border: 2px solid rgb(19, 131, 168);
+        width: 200px;
+        height: 50px;
+        color: rgb(19, 131, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        border-radius: 10px;
+       }
+       #part2{
+        width: 50%;
+        height: 100%;
+       }
+       #hed h1{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: rgb(26, 26, 104);
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+      
+    #page6{
+        width: 100%;
+        height: 100%;
+    }
+    #cards4{
+        display: flex;
+    }
+    .card1{
+        width: 20%;
+        height: 60%;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .card2{
+        width: 20%;
+        height: 60%;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .card3{
+        width: 20%;
+        height: 60%;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .card4{
+        width: 20%;
+        height: 60%;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .card1 img{
+        width: 100%;
+        height: 70%;
+    }
+    .card2 img{
+        width: 100%;
+        height: 70%;
+    }
+    .card3 img{
+        width: 100%;
+        height: 70%;
+    }
+    .card4 img{
+        width: 100%;
+        height: 70%;
+    }
+    .card1 p1{
+        margin: 30px;
+        color: rgba(12, 12, 233, 0.938);
+        
+    }
+    .card2 p2{
+        margin: 30px;
+        color: rgba(12, 12, 233, 0.938);
+        
+    }
+    .card3 p3{
+        margin: 30px;
+        color: rgba(12, 12, 233, 0.938);
+    }
+    .card4 p4{
+        margin: 30px;
+        color: rgba(12, 12, 233, 0.938);
+    }
+    .card1 p1 :hover{
+        color:  rgba(28, 28, 109, 0.767);
+    }
+    .card2 p2 :hover{
+        color:  rgba(28, 28, 109, 0.767);
+    }
+    .card3 p3 :hover{
+        color:  rgba(28, 28, 109, 0.767);
+    }
+    .card4 p4 :hover{
+        color:  rgba(28, 28, 109, 0.767);
+    }
+    .help h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(26, 26, 104);
+        margin-top: 50px;
+    }
+    #page7{
+        width: 100%;
+        height: 100%;
+    }
+    #page8{
+        width: 100%;
+        height: 100%;
+    }
+    #cards{
+        display: flex;
+    }
+    .card5{
+        width: 30%;
+        height: 70%;
+        margin: 30px;
+    }
+    .card6{
+        width: 30%;
+        height: 30%;
+        margin: 30px;
+    }
+    .card7{
+        width: 30%;
+        height: 30%;
+        margin: 30px;
+    }
+    .card5 img{
+        width: 80%;
+        
+    }
+    .card6 img{
+        width: 80%;
+    }
+    .card7 img{
+        width: 80%;
+    } 
+    .card5 p{
+        font-size: large;
+        margin: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .card6 p{
+        font-size: large;
+       margin-top: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .card7 p{
+        font-size: large;
+        margin-top: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #page8 img{
+        border-radius: 40%;
+        width: 100%;
+    }
+    #page9{
+        width: 100%;
+        height: 600px;
+    }
+    #box9{
+        width: 1200px;
+        height: 300px;
+        height: 80%;
+        border: 2px solid rgb(209, 206, 206);
+        margin-left: 70px;
+        border-radius: 30px;
+        margin-top: 80px;
+    }
+    #box9 img{
+       width: 200px;
+    }
+    #box9 h1{
+        margin-left: 240px;
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(26, 26, 104);
+         margin-top: -350px;
+    }
+    #box9 p{
+        margin-left: 240px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+    }
+    #right{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 80px;
+       
+    }
+    #btn13{
+        width: 170px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+        font-size: larger;
+        
+    }
+    #btn14{
+        width: 200px;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+    }
+    #box9 img{
+        width: 100%;
+        height: 100%;
+       border-radius: 30px;
+       object-fit: cover;
+    }
+    #page10{
+        width: 100%;
+        height: 90%;
+    }
+    #last{
+        width: 100%;
+        height: 70%;
+        display: flex;
+       
+    }
+    .card8{
+        width: 23%;
+        height: 100%;
+        margin: 20px;
+    }
+    .card8 img{
+        width: 35%;
+    }
+    #media{
+        display: flex;
+        align-items: center;
+        font-size: x-large;  
+        margin: 50px;
+        margin-left: -30px;  
+    }
+    .card8 h2{
+        font-size: 18px;
+    }
+    .card9{
+        width: 23%;
+        height: 100%;
+        margin: 20px;
+    }
+    .card10{
+        width: 23%;
+        height: 100%;
+        margin: 20px;
+    }
+    .card11{
+        width: 23%;
+        height: 100%;
+        margin: 20px;
+    }
+    .card9 h3{
+        margin: 40px;    
+    }
+    .card9 p{
+        margin: 15px;
+        margin-left: 30px;
+        font-size: 15px;
+        color: rgb(56, 56, 110);
+    }
+    .card10 h3{
+        margin: 40px;
+    }
+    .card10 p{
+        margin: 15px;
+        margin-left: 30px;
+        font-size: 15px;
+        color: rgb(56, 56, 110);
+    }
+    .card11 h3{
+        margin: 40px;
+    }
+    .card11 p{
+        margin: 15px;
+        margin-left: 30px;
+        font-size: 15px;
+        color: rgb(56, 56, 110);
+    }
+    #wide{
+        width: 100%;
+        height: 26%;
+       background-color:  rgba(7, 7, 109, 0.925);
+       margin-top: 10px;
+    }
+    .heading{
+        display: flex;
+    }
+    .icon1{
+        margin-left: 20px;
+        margin-top: 40px;
+        font-size: x-large;
+        color: white;
+    }
+    .heading h3{
+        margin-top: 40px;
+        color: white;
+    }
+    .icon2{
+        margin-top: 35px;
+        font-size: xx-large;
+        color: white;
+    }
+    .line1{
+        margin-left: 80px;
+    }
+    .line1 p{
+        margin-left: 30px;
+        margin-top: 20px;
+        color: white;
+    }
+    .line2{
+        margin-left: 250px;
+        margin-top: -20px;
+        color: white;
+    }
+    @media(max-width: 425px){
+    #header{
+      background-color: aqua;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    #logo img{
+       padding-right: 50px;
+    }
+}
+    
+     
+    
+   
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header" >
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="ri-menu-fill"></i>
+            </label>
+        <div id="logo"> <img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt=""></div>
+        <div id="nav">
+        <div class="tests"><h5>Products</h5></div>
+        <div class="tests"><h5>Industries</h5></div>
+        <div class="tests"><h5>Cumtomers</h5></div>
+        <div class="tests"><h5>Learning</h5></div>   
+        <div class="tests"><h5>Suppot</h5></div>
+        <div class="tests">
+            <h5>More</h5> 
+            <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div id="contact">
+            <p><u>contact Us</u></p>
+            <p>9163-9897-0750</p>
+        </div>
+        <div class="icon"><i class="ri-search-line"></i></div>
+        <div class="icon"><i class="ri-global-line"></i></div>
+        <div class="icon"><i class="ri-user-3-fill"></i></div>
+        </div>
+        <div id="login">login</div>
+        <div id="try">try for free</div>
+        </div>
+        <div id="fakeheader"></div>
+        <div id="page1">
+            <div id="strip">
+                <h5>JUST ANNOUNCED: See why Gartner® recognised Salesforce as a Leader in Customer Data Platforms.</h5>
+                <u>Read the report</u>
+            </div>
+            <div id="content">
+            <div id="box1">
+                <h1>Try Salesforce Starter Suite for free.</h1>
+                <p>unite marketing, sales, and service in a single app. Try Salesforce Starter Suite today. There's nothing to install. No credit card required.</p>
+                <div id="btns">
+                    <div id="btn1"> <a style="color: white; text-decoration-line: none;" href="free.html">Start free trail</a></div>
+                    <div id="btn2"><a style="text-decoration-line: none;" href="demo.html">watch demo</a></div>
+                </div>
+            </div>
+            <div id="box2">
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNWXA__RPlM2Ix04LUFsQQmVqvAKJDJ7-2g&s" alt="">
+            </div>
+            </div>
+            <div id="heading"><h1>Learn what Salesforce products can do for you.</h1></div>
+        </div>
+        
+        <div id="page2">
+         <div id="dibba">
+            <div id="dibba1">
+                <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-1.jpg?resize=768,433" alt="">
+              <h3>Small Business</h3>
+              <p>Sales, service, and email outreach tools in a single app.</p>
+              <h4> <u>Learn more</u></h4>
+            </div>
+            <div id="dibba2">
+                <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-2.jpg?resize=768,433" alt="">
+                <h3> <a href="Sales.html">Sales Cloud</a></h3>
+                <p>Close more deals and speed up growth with the #1 CRM.</p>
+                <h4><u>Learn more</u></h4>
+            </div>
+            <div id="dibba3">
+                <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-3.jpg?resize=768,433" alt="">
+                <h3>Service Cloud</h3>
+                <p>Make customers happy faster and build loyalty with Service Cloud.</p>
+                <h4><u>Learn more</u></h4>
+            </div>
+            <div id="dibba4">
+                <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-4.jpg?resize=768,433" alt="">
+                <h3>Marketing Cloud</h3>
+                <p>Build customer relationships for life with data-first digital marketing.</p>
+                <h4><u>Learn more</u></h4>
+            </div>
+        </div>
+        <div id="product">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg.png?resize=1536,469" alt="">
+            <div id="btn3"> <a style=" text-decoration-line: none;" href="Veiw.html"> Veiw all our products </a></div>
+        </div>
+        <div  id="box4">
+            <h1>We bring companies and customers together</h1>
+            <p>Salesforce is the world’s most trusted customer relationship management (CRM) platform. We help your marketing, sales, commerce, service and IT teams work as one from anywhere — so you can keep your customers happy everywhere.</p>
+            <div id="btnes">
+            <div id="btn4"> <a style="color: white;text-decoration-line: none;" href="free.html">Start free trail</a></div>
+            <div id="btn5"><a style="text-decoration-line: none;" href="demo.html">Watch demos</a></div>
+        </div>
+        <div id="learn">
+            <h2>Learn valuable skills for free, with Trailhead.</h2>
+            <p>Follow guided learning paths and get hands-on to learn Salesforce, digital, and soft skills from anywhere. </p>
+        </div>
+        </div>
+        </div>
+   
+        <div id="page3">
+            <div id="third">
+                <div id="box5">
+                    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/salesforce-quick-look-1/259d8619519bb3912ef0100cee5071cc_badge.png" alt="">
+                    <div id="btn6">Module</div>
+                    <h1>Salesforce Values: Quick Look</h1>
+                    <P>Learn how Salesforce helps your business build stronger relationships with your customers.</P>
+                    <h2><u>Start learning</u></h2>
+                </div>
+                <div id="box6">
+                    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/lex_implementation_basics/56b5a2cb9fb731dbfe6b5b88cd855775_badge.png" alt="">
+                    <div id="btn7">Module</div>
+                    <h1>Salesforce CRM</h1>
+                    <p>Learn how to use customer relationship management (CRM) software to grow your business.</p>
+                    <h2><u>Start learning</u></h2>
+                </div>
+                <div id="box7">
+                    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/sales-cloud-platform-quick-look/b91b2499486a772a4eee8ce55aa32b57_badge.png" alt="">
+                    <div id="btn8">Module</div>
+                    <h1>Sales Cloud Basics</h1>
+                    <p>Grow your business, boost productivity, and make smart decisions with Sales Cloud.</p>
+                    <h2><u>Start learning</u></h2>
+                </div>
+            </div>
+            <div id="btn9">Learn for free</div>
+        </div>
+     <div id="page4">
+        <h1>Over 150,000 companies, both big and small, are growing their business with Salesforce.</h1>
+        <div id="btn10">View all customers</div>
+     <div id="boxes1">
+        <div id="boxs1">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-balaji.png?resize=300,108" alt="">
+        </div>
+        <div id="boxs2">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-flame.png?resize=300,108" alt="">
+        </div>
+        <div id="boxs3">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-genpact.png?resize=300,108" alt="">
+        </div>
+        <div id="boxs4">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-godrejboyce.png?resize=300,108" alt="">
+        </div>
+        <div id="boxs5">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-mahindra.png?resize=300,108" alt="">
+        </div>
+        </div>
+        <div id="boxes2">
+        <div id="boxs6">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-pepe.png?resize=300,108" alt="">
+        </div>
+        <div id="boxs7">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-razorpay.png?resize=300,108" alt="">
+        </div>
+        <div id="boxs8">
+            <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/in-hp-min-logo-secutech.png?resize=300,108" alt="">
+        </div>
+        </div>
+     </div>
+     <div id="backphoto">
+        <img src="https://wp.salesforce.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-logos-bg-2.png?resize=1536,310" alt="">
+     </div>
+     <div id="page5">
+    
+     <div id="box8">
+        <div id="part1">
+        <h1>Try Salesforce for free. No credit <br>card required, no software to install.</h1>
+        <div id="dibbe">
+        <div id="btn11">start free trial</div>
+        <div id="btn12">See pricing</div>
+        </div>
+        </div>
+        <div id="part2">
+            <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/12/php-free-trial-mobile-inr2000-940w.png?resize=768,654" alt="">
+        </div>
+        </div>
+            <div id="hed">
+                <h1>How can we help grow your business?</h1>
+               </div>
+     </div>
+           <div id="page6">    
+                   <div id="cards4">
+                   <div class="card1">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-small-business-in.jpg?resize=1024,1024" alt="">
+                   <p1><u>Sell faster</u></p1>
+                   </div>
+                   <div class="card2">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-sales-in.jpg?resize=1024,1024" alt="">
+                    <p2><u>Close more deals</u></p2>
+                   </div>
+                   <div class="card3">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/php-products-service-in.jpg?resize=1024,1024" alt="">
+                   <p3><u>Scale service</u></p3>
+                   </div>
+                   <div class="card4">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/php-products-marketing.jpg?resize=1024,1024" alt="">
+                   <p4><u>Build customer relationships</u></p4>
+                   </div>
+                   </div>
+                   <div class="help">
+                    <h1>Our technology helps people create better jobs,<br> lives, companies, and communities.</h1>
+                   </div>
+                   
+           </div>
+                  <div id="page8">
+                    <div id="cards">
+                   <div class="card5">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201168.png?resize=1024,683" alt="">
+                    <p>Technology given for free or discounted</p>
+                   </div>
+                   <div class="card6">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201169.png?resize=1024,683" alt="">
+                    <p>Fortune 100 Best Companies to Work For 2024 (16 years in a row)</p>
+                    </div>
+                   <div class="card7">
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/group-201170.png?resize=1024,683" alt="">
+                    <p>Fortune World’s Most Admired Companies 2024</p>
+                    </div>
+                    </div>
+                    <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg-2.png?resize=1536,307" alt="">
+                  </div>
+                  <div id="page9">
+                    <div id="box9">
+                        <img src="https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/04/pb-hp-footer-mid3-in.jpg?resize=1536,953" alt="">
+
+                        <h1>Questions? We’ll put you on the right <br>path.</h1>
+                        <p>Ask about Salesforce products, pricing, implementation, or anything else. <br> highly trained reps are standing by, ready to help.</p>
+                        <div id="right">
+                        <div id= btn13>contact us </div>
+                        <div id= btn14> <u>Editions & Pricing</u></div>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="page10">
+                    <div id="last">
+                    <div class="card8">
+                        <img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" alt="">
+                          <div id="media">
+                         <div class="icon"><i class="ri-facebook-box-fill"></i></div>
+                         <div class="icon"><i class="ri-twitter-x-line"></i></div>
+                         <div class="icon"><i class="ri-linkedin-box-fill"></i></div>
+                         <div class="icon"><i class="ri-instagram-line"></i></div>
+                         <div class="icon"><i class="ri-youtube-fill"></i></div>
+                          </div>
+                          <h2>Call us at 9163-9897-0750</h2>
+                        </div>
+                    <div class="card9">
+                        <h3>New to Salesforce?</h3>
+                        <p>Why Salesforce</p>
+                        <p>What is CRM?</p>
+                        <p>Explore All Products</p>
+                        <p>SaaS</p>
+                        <p>Customer Success</p>
+                        <p>Product Pricing</p>
+        
+                    </div>
+                    <div class="card10">
+                        <h3>About Salesforce</h3>
+                        <p>Our Story</p>
+                        <p>Careers</p>
+                        <p>Press</p>
+                        <p>Blog</p>
+                        <p>Security and Performance</p>
+                        <p>Salesforce.org</p>
+                        <p>Best CRM Software</p>
+                        <p>Sustainability</p>
+                        <p>Legal</p>
+                        <p>Give us your Feedback</p>
+                    </div>
+                    <div class="card11">
+                        <h3>Popular Links</h3>
+                        <p>New Release Features</p>
+                        <p>Salesforce Mobile App</p>
+                        <p>Business App Store</p>
+                        <p>Dreamforce</p>
+                        <p>CRM Software</p>
+                        <p>Salesforce Plus</p>
+                        <p>Salesforce for startups</p>
+                    </div>
+                    </div>
+                    <div id="wide">
+                    <div id="lh" style="display: flex;">
+            <div class="heading">
+                    <div class="icon1"><i class="ri-global-line"></i></div>
+                    <h3>Worldwide</h3>
+                    <div class="icon2"><i class="ri-arrow-down-s-line"></i></div>
+                  </div>
+                  <div class="line1" style="display: flex;">
+                    <p><u>legal</u></p>
+                    <p><u>Term of Service</u></p>
+                    <p><u>privacy</u></p>
+                    <p><u>Responsible Disclosure</u></p>
+                    <p><u>Trust</u></p>
+                    <p><u>Contact</u></p>
+                    <p><u>Cookie Preferences</u></p>
+                    <p><u>Your Privacy Choices</u></p>
+                  </div>
+                    </div>
+                  <div class="line2">
+                    <p>© Copyright 2024 Salesforce, Inc. <u>All rights reserved.</u> Various trademarks held by their respective owners.</p>
+                  </div>
+                    </div>
+        </div>
+        </div>
+ 
+       
+      
+</body>                
+</html>
